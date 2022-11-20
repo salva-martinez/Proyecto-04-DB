@@ -1,60 +1,23 @@
-# Express API Sequelize + Mysql + jwt + Rol
+# Videoclub-API
+Backend para el proyecto de un videoclub online 
 
-<br>
+El primer paso para arrancar el proyecto es clonar este repositorio en su repositorio local.
 
-![image](https://user-images.githubusercontent.com/16636086/138780246-dc69ba86-c111-42e6-8079-35ffeba723f9.png)
+A continuación, debemos instalar las dependencias no incluidas en el repositorio al utilizar el archivo .gitignore. Para ello, debemos introducir en el terminal el siguiente comando:
 
-## COMANDOS BÁSICOS
+npm i
+Inicializamos Sequelize con el siguiente comando:
 
-```
-npm init
-npm install
-npm update
-npm run dev
-npm run start
+sequelize init
+Realizamos la migración de los modelos a la base de datos local.
 
-npm install cors jsonwebtoken bcrypt
-sequelize model:generate --name user --attributes name:string, password:string, email:string
-sequelize db:create
 sequelize db:migrate
+Levantamos el servidor para acceder al endpoint de clonar peliculas desde Postman.
 
-sequelize db:migrate:undo
-sequelize db:migrate:undo:all
+npm run dev
+Para correr en la base de datos
 
-sequelize seed:generate --name demo-user
-sequelize db:seed:all
-sequelize db:seed:undo
-sequelize db:seed:undo:all
-```
+Me quedaria realizar el CRUD de las diferentes tablas.
 
-## END-POINTS
-
-```
-
-#### Register
-POST - localhost:3000/api/signup - { "name": "root", "email": "root@email.com",  "password": "password" }
-
-#### Login
-POST - localhost:3000/api/signin - { "email": "root@email.com",  "password": "password" }
-
-#### Home
-GET - localhost:3000
-
-#### Movies
-GET - localhost:3000/movies
-GET - localhost:3000/movies/:id
-GET - localhost:3000/movies/name/:title
-POST - localhost:3000/movies
-PUT - localhost:3000/movies:id
-DELETE - localhost:3000/movies
-DELETE - localhost:3000/movies:id
-
-#### Categories
-GET - localhost:3000/categories
-GET - localhost:3000/categories/:id
-GET - localhost:3000/categories/name/:title
-POST - localhost:3000/categories
-PUT - localhost:3000/categories:id
-DELETE - localhost:3000/categories
-DELETE - localhost:3000/categories:id
-```
+modelo:
+![Captura de pantalla 2022-11-06 194247 base de datos,](https://user-images.githubusercontent.com/114058655/200189349-d8c0d291-7cf6-406f-8813-0150b186e40f.png)
