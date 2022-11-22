@@ -52,7 +52,7 @@ module.exports = {
         updatedAt: new Date()
       },
       {
-        title : "Vaca y Pollo",
+        title : "Mr Pickles",
         categoryId : 8,
         createdAt: new Date(),
         updatedAt: new Date()

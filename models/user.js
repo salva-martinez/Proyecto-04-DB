@@ -33,12 +33,12 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   // Comprueba que el usuario es administrador
-  user.isAdmin = function(roles) {
-    let tmpArray = [];
-    roles.forEach(role => tmpArray.push(role.role));
+  // user.isAdmin = function(roles) {
+  //   let tmpArray = [];
+  //   roles.forEach(role => tmpArray.push(role.role));
 
-    return tmpArray.includes('admin');
-  }
+  //   return tmpArray.includes('admin');
+  // }
 
   return user;
 };

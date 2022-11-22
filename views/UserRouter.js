@@ -6,7 +6,7 @@ const AuthController = require('../controllers/AuthController');
 
 
 // Dos rutas: login y registro
-// /api/singin & /api/singup
+// /api/singin y /api/singup
 router.post('/signin', AuthController.signIn);
 router.post('/signup', AuthController.signUp);
 
