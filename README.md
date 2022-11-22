@@ -7,18 +7,31 @@ Utilizare las tecnologias Node con Express junto con Sequelize.
 
 Para ello descargaremos los siguientes paquetes:
 
--axios
--bcrypt
--colors
--cors
--dotenv
--express
--jsonwebtoken
--morgan
--mysql2
--nodemon
--sequelize y sequelize-cli
--winston
+
+  -axios
+  
+  -bcrypt
+  
+  -colors
+  
+  -cors
+  
+  -dotenv
+  
+  -express
+  
+  -jsonwebtoken
+  
+  -morgan
+  
+  -mysql2
+  
+  -nodemon
+  
+  -sequelize y sequelize-cli
+  
+  -winston
+ 
 
 # LISTA DE COMANDOS
 
@@ -39,16 +52,16 @@ Para deshacer las migraciones:
 
 # END POINTS
 
-Register:
+# Register:
 POST - localhost:3000/api/signup - { "name": "root", "email": "root@email.com", "password": "password" }
 
-Login:
+# Login:
 POST - localhost:3000/api/signin - { "email": "root@email.com", "password": "password" }
 
-Home:
+# Home:
 GET - localhost:3000
 
-Peliculas:
+# Peliculas:
 GET - localhost:3000/movies
 GET - localhost:3000/movies/:id
 GET - localhost:3000/movies/name/:title
@@ -57,7 +70,7 @@ PUT - localhost:3000/movies:id
 DELETE - localhost:3000/movies
 DELETE - localhost:3000/movies:id
 
-Series:
+# Series:
 GET - localhost:3000/shows
 GET - localhost:3000/shows/:id
 GET - localhost:3000/shows/name/:title
@@ -66,7 +79,7 @@ PUT - localhost:3000/shows:id
 DELETE - localhost:3000/shows
 DELETE - localhost:3000/shows:id
 
-Genero:
+# Genero:
 GET - localhost:3000/categories
 GET - localhost:3000/categories/:id
 GET - localhost:3000/categories/name/:title
@@ -75,7 +88,7 @@ PUT - localhost:3000/categories:id
 DELETE - localhost:3000/categories
 DELETE - localhost:3000/categories:id
 
-Usuarios:
+# Usuarios:
 GET - localhost:3000/users
 GET - localhost:3000/users/:id
 GET - localhost:3000/users/name/:title
