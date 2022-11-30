@@ -1,0 +1,4 @@
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2022:21:31:44 +0000] \"GET /api/signup HTTP/1.1\" 404 149 \"-\" \"Thunder Client (https://www.thunderclient.com)\"\n","timestamp":"2022-11-30T21:31:44.614Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2022:21:34:00 +0000] \"POST /api/signup HTTP/1.1\" 500 1068 \"-\" \"Thunder Client (https://www.thunderclient.com)\"\n","timestamp":"2022-11-30T21:34:00.390Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2022:21:47:23 +0000] \"POST /api/signup HTTP/1.1\" 200 632 \"-\" \"Thunder Client (https://www.thunderclient.com)\"\n","timestamp":"2022-11-30T21:47:23.828Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [30/Nov/2022:21:48:34 +0000] \"POST /api/signin HTTP/1.1\" 200 632 \"-\" \"Thunder Client (https://www.thunderclient.com)\"\n","timestamp":"2022-11-30T21:48:34.103Z"}
