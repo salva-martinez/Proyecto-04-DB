@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const {middlewareBearer} = require('../middlewares/auth');
 
 //Importo modelo de datos
 const MovieController = require('../controllers/MovieController');
@@ -8,9 +9,9 @@ const MovieController = require('../controllers/MovieController');
 router.get('/', MovieController.getAll);
 router.get('/:id', MovieController.getById);
 router.get('/name/:title', MovieController.getByTitle);
-router.post('/', MovieController.create);
-router.put('/:id', MovieController.update);
-router.delete('/', MovieController.deleteAll);
-router.delete('/:id', MovieController.delete);
+router.post('/',middlewareBearer, MovieController.create);
+router.put('/:id',middlewareBearer, MovieController.update);
+router.delete('/',middlewareBearer, MovieController.deleteAll);
+router.delete('/:id',middlewareBearer, MovieController.delete);
 
 module.exports = router;

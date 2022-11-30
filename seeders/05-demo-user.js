@@ -7,21 +7,21 @@ module.exports = {
       [
         {
           name: 'admin',
-          password: '$2b$10$wTgGMWGnzpEv3rGHgH3D4.4TvlKOoMDORxYkIOTYaDTjwC.jQ7YWm',
+          password: '4321',
           email: 'admin@gmail.com',
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: 'user1',
-          password: '$2b$10$wTgGMWGnzpEv3rGHgH3D4.4TvlKOoMDORxYkIOTYaDTjwC.jQ7YWm',
+          password: '1122',
           email: 'user1@gmail.com',
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
           name: 'user2',
-          password: '$2b$10$wTgGMWGnzpEv3rGHgH3D4.4TvlKOoMDORxYkIOTYaDTjwC.jQ7YWm',
+          password: '2211',
           email: 'user2@gmail.com',
           createdAt: new Date(),
           updatedAt: new Date(),
