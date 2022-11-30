@@ -7,7 +7,7 @@ const router = require('./router.js');
 const cors = require("cors"); // Importamos el modulo cors
 
 const app = express();
-const PORT = process.env.PORT || 7222; //Configuramos puerto railway
+const PORT = process.env.PORT || 3306; //Configuramos puerto railway
 
 //Config Cors Options
 var corsOptions = {
