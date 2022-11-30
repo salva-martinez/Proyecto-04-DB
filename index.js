@@ -4,10 +4,10 @@ const morgan = require('morgan');
 const logger = require('./config/winston');
 const db = require('./db.js');
 const router = require('./router.js');
-const cors = require("cors"); // Import cors module
+const cors = require("cors"); // Importamos el modulo cors
 
 const app = express();
-const PORT = process.env.PORT || 3000; //Configuramos puerto heroku
+const PORT = process.env.PORT || 7222; //Configuramos puerto railway
 
 //Config Cors Options
 var corsOptions = {
@@ -26,9 +26,9 @@ app.use(cors(corsOptions)); //Add CORS Middleware
 app.get('/', (req, res) => {res.send('Bienvenidos a Express');});
 app.use(router);
 
-//Connecting to the database
+//Conectando a la database
 db.then(()=>{
-    //Starting server
+    //Arrancando el server
         app.listen(PORT, ()=> console.log(`Server on port ${PORT}`.bgGreen.black));
     })
     .catch((err)=> console.log(err.message));   

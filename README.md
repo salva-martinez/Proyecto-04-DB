@@ -1,23 +1,129 @@
-# Videoclub-API
-Backend para el proyecto de un videoclub online 
+# Proyecto-04-DB
+Base de datos Videoclub
 
-El primer paso para arrancar el proyecto es clonar este repositorio en su repositorio local.
+Creamos el backend de una aplicación videoclub online.
 
-A continuación, debemos instalar las dependencias no incluidas en el repositorio al utilizar el archivo .gitignore. Para ello, debemos introducir en el terminal el siguiente comando:
+Utilizare las tecnologias Node con Express junto con Sequelize.
 
-npm i
-Inicializamos Sequelize con el siguiente comando:
+Para ello descargaremos los siguientes paquetes:
 
-sequelize init
-Realizamos la migración de los modelos a la base de datos local.
 
-sequelize db:migrate
-Levantamos el servidor para acceder al endpoint de clonar peliculas desde Postman.
+  -axios
+  
+  -bcrypt
+  
+  -colors
+  
+  -cors
+  
+  -dotenv
+  
+  -express
+  
+  -jsonwebtoken
+  
+  -morgan
+  
+  -mysql2
+  
+  -nodemon
+  
+  -sequelize y sequelize-cli
+  
+  -winston
+ 
 
-npm run dev
-Para correr en la base de datos
+# LISTA DE COMANDOS
 
-Me quedaria realizar el CRUD de las diferentes tablas.
+Instalamos las dependencias con el gestor de paquetes (Node Package Manager) mediante este comando:
+-npm i
 
-modelo:
-![Captura de pantalla 2022-11-06 194247 base de datos,](https://user-images.githubusercontent.com/114058655/200189349-d8c0d291-7cf6-406f-8813-0150b186e40f.png)
+Creamos por comando la base de datos en Railway:
+-sequelize db:create
+
+Migramos las tablas a nuestra base de datos por comando:
+-sequelize db:migrate
+
+Generamos las seeders(Son los datos que van en las tablas) por comando:
+-sequelize db:seed:all
+
+Para deshacer las migraciones:
+-sequelize db:migrate:undo
+
+# END POINTS
+
+# Register:
+
+POST - localhost:3000/api/signup - { "name": "root", "email": "root@email.com", "password": "password" }
+
+# Login:
+
+POST - localhost:3000/api/signin - { "email": "root@email.com", "password": "password" }
+
+# Home:
+
+GET - localhost:3000
+
+# Peliculas:
+
+GET - localhost:3000/movies
+
+GET - localhost:3000/movies/:id
+
+GET - localhost:3000/movies/name/:title
+
+POST - localhost:3000/movies
+
+PUT - localhost:3000/movies:id
+
+DELETE - localhost:3000/movies
+
+DELETE - localhost:3000/movies:id
+
+# Series:
+
+GET - localhost:3000/shows
+
+GET - localhost:3000/shows/:id
+
+GET - localhost:3000/shows/name/:title
+
+POST - localhost:3000/shows
+
+PUT - localhost:3000/shows:id
+
+DELETE - localhost:3000/shows
+
+DELETE - localhost:3000/shows:id
+
+# Genero:
+
+GET - localhost:3000/categories
+
+GET - localhost:3000/categories/:id
+
+GET - localhost:3000/categories/name/:title
+
+POST - localhost:3000/categories
+
+PUT - localhost:3000/categories:id
+
+DELETE - localhost:3000/categories
+
+DELETE - localhost:3000/categories:id
+
+# Usuarios:
+
+GET - localhost:3000/users
+
+GET - localhost:3000/users/:id
+
+GET - localhost:3000/users/name/:title
+
+POST - localhost:3000/users
+
+PUT - localhost:3000/users:id
+
+DELETE - localhost:3000/users
+
+DELETE - localhost:3000/users:id

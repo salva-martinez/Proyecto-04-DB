@@ -41,7 +41,7 @@ AuthController.signIn = (req, res) =>{
 //REGISTER new user in database
 //create user
 AuthController.signUp = (req, res)=> {
-    console.log("hola")
+
         // Encriptamos la contraseña
         let password = bcrypt.hashSync(req.body.password, Number.parseInt(authConfig.rounds));
 
@@ -53,7 +53,9 @@ AuthController.signUp = (req, res)=> {
         }).then(user => {
 
             // Creamos el token
-            let token = jwt.sign({ user: user }, authConfig.secret);
+            let token = jwt.sign({ user: user }, authConfig.secret, {
+                expiresIn: authConfig.expires
+            });
 
             res.json({
                 user: user,
@@ -75,4 +77,3 @@ AuthController.signUp = (req, res)=> {
     };
 
 module.exports = AuthController;
-
