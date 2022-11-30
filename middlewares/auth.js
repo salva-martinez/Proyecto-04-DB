@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
 const { user } = require('../models/index'); //incluyo user model
 
-module.exports = (req, res, next) => {
+const middlewareBearer = (req, res, next) => {
 
     // Comprobar que existe el token
     if(!req.headers.authorization) {
@@ -30,3 +30,5 @@ module.exports = (req, res, next) => {
     }
 
 };
+
+module.exports = {middlewareBearer};
