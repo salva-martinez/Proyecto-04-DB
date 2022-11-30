@@ -9,8 +9,8 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      name: {
-        type: Sequelize.STRING
+      loansDate: {
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,
@@ -19,6 +19,27 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      userId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'users',
+          key: 'id'
+        }
+      },
+      movieId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'movies',
+          key: 'id'
+        }
+      },
+      showId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'shows',
+          key: 'id'
+        }
       }
     });
   },
