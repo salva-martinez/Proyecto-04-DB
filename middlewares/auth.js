@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
-const { user } = require('../models/index'); //incluyo user model
+const { user } = require('../models/index');
 
 const middlewareBearer = (req, res, next) => {
 
