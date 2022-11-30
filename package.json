@@ -1,5 +1,5 @@
 {
-  "name": "prc18",
+  "name": "videoclub",
   "version": "0.0.1",
   "description": "Proyecto inicial API REST",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "API",
     "GeeksHubs"
   ],
-  "author": "Jose Marin",
+  "author": "Salva",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
