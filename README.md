@@ -121,6 +121,6 @@ DELETE - localhost:3000/categories:id
 
 # Alquileres:
 
-Préstamo de una película : petición POST loans que permite al usuario prestar una película de la base de datos. 
+Préstamo de una película : petición POST loans que permite al usuario prestar una película o serie de la base de datos. 
 
 Prestar un programa : petición POST loans que permite al usuario prestar un programa de la base de datos.
