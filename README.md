@@ -1,5 +1,5 @@
 # Proyecto-04-DB
-Base de datos Videoclub
+BackEnd Videoclub
 
 Creamos el backend de una aplicación videoclub online.
 
@@ -49,6 +49,12 @@ Generamos las seeders(Son los datos que van en las tablas) por comando:
 
 Para deshacer las migraciones:
 -sequelize db:migrate:undo
+
+<br>
+
+# Relación de modelos:
+
+![image](https://C:\Users\salva\Desktop\modelos-relacionados.png)
 
 # END POINTS
 
@@ -112,18 +118,8 @@ DELETE - localhost:3000/categories
 
 DELETE - localhost:3000/categories:id
 
-# Usuarios:
+# Alquileres:
 
-GET - localhost:3000/users
+Préstamo de una película : petición POST loans que permite al usuario prestar una película de la base de datos. 
 
-GET - localhost:3000/users/:id
-
-GET - localhost:3000/users/name/:title
-
-POST - localhost:3000/users
-
-PUT - localhost:3000/users:id
-
-DELETE - localhost:3000/users
-
-DELETE - localhost:3000/users:id
+Prestar un programa : petición POST loans que permite al usuario prestar un programa de la base de datos.
