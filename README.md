@@ -54,7 +54,8 @@ Para deshacer las migraciones:
 
 # Relación de modelos:
 
-![image](https://C:\Users\salva\Desktop\modelos-relacionados.png)
+![modelos-relacionados](https://user-images.githubusercontent.com/114058655/205016527-a36f9a6c-9ad5-41fd-bdaf-e9ef9b089e18.png)
+
 
 # END POINTS
 
